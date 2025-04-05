@@ -68,7 +68,7 @@ const config = {
           // },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://discord.gg/XNxerMsX',
+            href: 'https://discord.com/invite/JbhkqUJKFF',
             label: 'Forum',
           },
           //     {

@@ -28,7 +28,7 @@ function HomepageHeader() {
               "marginTop": "2rem"
             }}
             className="button button--secondary button--lg"
-            to="https://discord.gg/XNxerMsX">
+            to="https://discord.com/invite/JbhkqUJKFF">
             Enter Forum
           </Link>
         </div>
@@ -38,7 +38,7 @@ function HomepageHeader() {
               "marginTop": "2rem"
             }}
             className="button button--secondary button--lg"
-            to="https://discord.gg/XNxerMsX">
+          to="https://discord.com/invite/JbhkqUJKFF">
             Discord
           </Link>
         </div>
