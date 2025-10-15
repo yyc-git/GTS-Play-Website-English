@@ -71,6 +71,10 @@ const config = {
             href: 'https://discord.com/invite/JbhkqUJKFF',
             label: 'Forum',
           },
+          {
+            href: 'https://x.com/yang_yuanc14339',
+            label: 'X(Twitter)',
+          },
           //     {
           //       label: '交流加QQ群',
           //       href: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=QpNrLbhk5TZD8bg_sNalLrAKHVS3qCD2&authKey=ePPMKFJ1H3OXMdRLXJlYKNdyMPoO%2Fh2FWzcxgx5LjtdqZGmKU5i5QbYbAZeZRoz%2F&noverify=0&group_code=892578345'

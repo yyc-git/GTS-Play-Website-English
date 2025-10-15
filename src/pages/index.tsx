@@ -38,8 +38,8 @@ function HomepageHeader() {
               "marginTop": "2rem"
             }}
             className="button button--secondary button--lg"
-          to="https://discord.com/invite/JbhkqUJKFF">
-            Discord
+        to="https://x.com/yang_yuanc14339">
+            X(Twitter)
           </Link>
         </div>
       </div>
