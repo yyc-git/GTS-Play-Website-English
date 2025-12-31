@@ -35,31 +35,6 @@ Please use `buff-` as the prefix for Buff Mod names, for example:
 
 The service interface of the Buff Protocol is defined in `buff-protocol/src/service/ServiceType.ts`:
 
-```typescript
-import { api } from "types/src/APIType";
-import { characterType, singleBuffData, state, usedGirl } from "types/src/ImportedTypes";
-
-export type service = {
-	init?: (api: api, state: state) => Promise<state>,
-	dispose?: (api: api, state: state) => Promise<state>,
-
-	getName: () => string,
-	getBuffData: (api: api) => singleBuffData,
-	addBuff: (api: api, state: state, usedGirl: usedGirl, lastTime: number, value: any) => Promise<state>,
-
-	getCharacterType: () => characterType,
-	getImageSrc: () => string,
-	isPositive: () => boolean,
-	getTargetName?: () => string,
-
-	getDescription?: (api: api, state: state) => string,
-
-	getCount?: (api: api, usedGirl: usedGirl) => (state: state) => number,
-}
-```
-
-"?" indicates optional functions
-
 ### 4.2 Data Type (StateType)
 
 The data type of the Buff Protocol is defined in `buff-protocol/src/state/StateType.ts`:

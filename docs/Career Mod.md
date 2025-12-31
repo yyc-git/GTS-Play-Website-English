@@ -12,7 +12,7 @@ Career Mods mainly include the following functions:
 - Define basic information of careers (name, icon, required gems, applicable character types, etc.)
 - Define career features included in the career
 
-For the reference implementation of Career Mod, please refer to `protocols/career-protocol/reference/`
+<!-- For the reference implementation of Career Mod, please refer to `protocols/career-protocol/reference/` -->
 
 ## 2. Protocol Used by Career Mod
 
@@ -130,6 +130,7 @@ export let getBlockService: getBlockServiceBlockManager<service> = (api) => {
                 // Career name
                 title: api.getLanguageDataByData(state, _getTextData(), languageKey.Title),
                 // Career icon ID, corresponding to the icon file name in the asset/ directory
+                // Should be unique, hence the prefix is added
                 iconId: "career_test1_icon",
                 // Number of gems required
                 needGem: needGem.Middle,
