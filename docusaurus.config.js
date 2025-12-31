@@ -60,12 +60,12 @@ const config = {
             href: 'https://www.gts-play.cn/',
             label: 'Enter Game',
           },
-          // {
-          //   type: 'doc',
-          //   docId: '简介',
-          //   position: 'left',
-          //   label: '文档',
-          // },
+          {
+            type: 'doc',
+            docId: 'Introduction',
+            position: 'left',
+            label: 'Mod Docs',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://discord.com/invite/JbhkqUJKFF',

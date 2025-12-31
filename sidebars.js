@@ -39,11 +39,24 @@ const sidebars = {
   docs: [
     {
       type: 'category',
-      label: '入门',
+      label: 'Introduction',
       collapsible: false,
       collapsed: false,
       items: [
-        "简介"
+        "Introduction",
+        "Develop, Test, and Publish Your First Mod",
+        "Understanding API"
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Mod Development',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        "Career Mod",
+        "Career Feature Mod",
+        "Buff Mod"
       ],
     },
   ],
