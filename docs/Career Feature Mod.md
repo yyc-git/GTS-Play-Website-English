@@ -105,8 +105,8 @@ export let getBlockService: getBlockServiceBlockManager<service> = (api) => {
                 name: getName(),
                 // Whether it is a positive feature
                 positive: true,
-                // Applicable character type (here is Giantess or Little Man)
-                characterType: characterType.GiantessOrLittleMan,
+                // Applicable character type (here is Little Man)
+                characterType: characterType.LittleMan,
                 // Probability of this feature being selected by random career
                 rate: rate.Middle2,
                 // Feature description
@@ -129,22 +129,10 @@ export let getBlockService: getBlockServiceBlockManager<service> = (api) => {
                  * @param name Feature name
                  */
                 applyFunc: (state, characterType_, value, name) => {
-                    // This function will be called twice here, acting on Giantess and Little Man characters respectively
-
-                    switch (characterType_) {
-                        // For Little Man characters, increase their maximum health
-                        case characterType.LittleMan:
-                            state = api.LittleManBuildUtils.setHp(state, (state, hp) => {
-                                return hp * (1 + value)
-                            }, true)
-                            break
-                        // For Giantess characters, increase their maximum health
-                        case characterType.Giantess:
-                            state = api.GiantessBuildUtils.setFullHp(state, (state, hp) => {
-                                return hp * (1 + value)
-                            }, true, usedGirlEnum.PlayerGirl)
-                            break
-                    }
+                    // increase LittleMan's maximum health
+                    state = api.LittleManBuildUtils.setHp(state, (state, hp) => {
+                        return hp * (1 + value)
+                    }, true)
 
                     return Promise.resolve(state)
                 },

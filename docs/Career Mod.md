@@ -149,8 +149,8 @@ export let getBlockService: getBlockServiceBlockManager<service> = (api) => {
                 })
             }
         },
-        // Character type applicable to the career (here is Giantess or Little Man)
-        getCharacterType: () => characterType.GiantessOrLittleMan,
+        // Character type applicable to the career (here is Little Man)
+        getCharacterType: () => characterType.LittleMan,
     }
 }
 ```
